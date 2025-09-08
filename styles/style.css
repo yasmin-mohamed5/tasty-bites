@@ -32,12 +32,8 @@ nav{
     display: flex;
     justify-content:space-between; /* or flex-start */
     position:fixed;  /* keeps it at top by default */
-    top:0;
-    left:0;
-    width: 100%; 
-    /* height: auto; */
+    width: 100%;
     background-color: white;
-    /* padding-left: 2%; */
     padding-top: 1.5%;
     padding-bottom: 1.5%;
 }
@@ -121,12 +117,20 @@ button:hover{
     gap: 1%;
 }
 .products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    display: flex;
+    flex-wrap: wrap;
     gap: 30px;
-    max-width: 1000px;
-    margin: auto;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
+
+.products-grid > * {
+    flex: 1 1 250px; /* Grow, shrink, and set a base width */
+    max-width: 300px; /* Optional: limit the max size of each item */
+}
+
 .product {
     background-color: #fff;
     border: 1px solid #ddd;
