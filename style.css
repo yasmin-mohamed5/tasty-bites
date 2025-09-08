@@ -1,0 +1,292 @@
+@media (max-width: 768px) {
+    main {
+    font-size: 14px;
+    flex-direction: column;
+    }
+    .content_container{flex-direction: column;}
+}
+html,body{
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+body{
+    flex: 1;
+}
+main{
+    margin-top: 2%;
+    flex: 1;
+}
+body{
+    min-height: 100vh;
+    /* height: 100%; */
+    background-color: rgb(249, 244, 239);
+}
+/* start nav */
+nav{
+    /* margin-top:0%; */
+    color: brown;
+    font-size:x-large;
+    display: flex;
+    justify-content:space-between; /* or flex-start */
+    position:fixed;  /* keeps it at top by default */
+    top:0;
+    left:0;
+    width: 100%; 
+    /* height: auto; */
+    background-color: white;
+    /* padding-left: 2%; */
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+a:hover{
+    color: brown;
+    /* لما الماوس يجي على اللينك بيخلي لونه بني */
+}
+.link{
+    text-decoration: none;
+    color: black;
+}
+.link:hover{
+    color: brown;
+}
+.active_link {
+    color: brown;
+    text-decoration: none;
+}
+/* end nav */
+/* start home */
+.links:hover{
+    color: #fff;
+}
+#details{
+    font-size: 300% ;
+    font-weight: 600;
+    font-style:oblique;
+    justify-content: center;
+    align-items: center;
+}
+#description{
+    text-align: center;
+    font-weight: 100;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+.center_button{
+    padding: 10px;
+    display: flex;
+    justify-content: center; /* centers horizontally */
+    align-items: center;     /* centers vertically */
+}
+button{
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+}
+button:hover{
+    background-color: darkred;
+}
+.hero-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 70%;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#products{
+    text-align:center;
+    font-size: xxx-large;
+}
+#details{
+    text-align: center;
+}
+
+/* end home */
+/* start products */
+.list{
+
+    display: flex;
+    align-items:flex-start;
+    gap: 1%;
+}
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    gap: 30px;
+    max-width: 1000px;
+    margin: auto;
+}
+.product {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+.product img {
+    width: 100%;
+    height: auto;
+    max-height: 350px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product button {
+    /* padding: 10px 15px; */
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    /* cursor: pointer; */
+    /* transition: background-color 0.3s ease; */
+} 
+.button:hover {
+    background-color: darkred;
+    }
+.filter-buttons{
+    background-color: brown;
+    color: white;
+    border: none;
+    border-radius: 5px;
+}
+.filter-buttons:hover{
+    background-color: darkred;
+} 
+/* end products */
+/* start about */
+.large{
+    font-size: x-large;
+    font-weight: 800;
+}
+.medum{
+    font-size: larger;
+    font-weight:lighter;
+}
+.back{
+    width: 55%;
+    background-color:rgb(255, 255, 255);
+    border: 2px;
+    border-radius: 2%;
+    padding-bottom: 1%;
+    /* padding-top: 1%; */
+}
+.space{
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+/* end about */
+/* start contact */
+section{
+    padding-left: 2%;
+}
+#page_def{
+    text-align: center;
+    color: white;
+    background-color: #5a5a5a;
+    padding-top: 0.2%;
+    padding-bottom: 0.25%;
+    
+}
+.head{
+    margin: 0;
+    padding-top: 2%;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.detail{
+    font-size: large;
+    font-weight: 300;
+}
+.headers{
+    color: brown;
+    font-size:xx-large;
+    font-weight: 900;
+}
+.form_{
+    border: 2px solid; 
+    border-color: white;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 10%;
+}
+#cont{
+    font-size: larger;
+    font-weight: 600;
+}
+#comunication{
+    color:brown;
+}
+.content_container{
+    padding-left: 1%;
+    display: flex;
+    align-items: flex-start;
+    gap: 19%;
+}
+.cotent_info{
+    flex: 1;
+}
+.content_form{
+    flex: 1;
+}
+/* end contact */
+/* start footer */
+footer {
+    background-color: #333;
+    width: 100%;
+    height: auto;
+    color: white;
+    padding-top: 1%;
+    padding-bottom: 0.5%;
+    display: flex;  /* make sections  جنب بعض */ 
+    flex-wrap: wrap;
+    margin: 0;
+    gap: 26%;
+}
+
+.titles{
+    font-size:150%;
+}
+.links{
+    font-size: 100%;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+}
+#small{
+    font-size: 100%;
+    font-weight: 400;
+}
+i{
+    font-size: 110%;
+    color: azure;
+}
+#change_color:hover{
+    color: yellow;
+}
+.social{
+    display: flex;
+    gap: 6%;
+}
+
+#rights{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+/* end footer */

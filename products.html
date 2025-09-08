@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Tasty Bites</title>
+    <meta name="description" content="tasty food & beverage online shop">
+
+</head>
+<body>
+<!-- start nav -->
+    <header>
+    <nav ><span > <b>Tasty Bites</b></span>
+    <span> <a class="link" href="home.html" title="go to home page" >Home</a>
+    <a class="active_link" href="products.html" title="go to products page">Products</a>
+    <a class="link" href="about.html" title="go to about page">About</a>
+    <a class="link" href="contact.html" title="go to contact page">Contact</a>
+    </span>
+    </nav>
+    </header>
+<!-- end nav -->
+<main>
+    <br><br>
+    <section id="page_def" >
+        <p class="head">Our Products</p>
+    <p class="detail">Discover our selection of premium food and beverage products, crafted with care using the finest ingredients.</p>
+    <br>
+    </section>
+    <br>
+<section >
+    <div style="text-align: center;">
+        <button class="filter-buttons" onclick="filterProducts('all')">all</button> 
+        <button class="filter-buttons" onclick="filterProducts('Beverages')">Beverages</button>
+        <button class="filter-buttons" onclick="filterProducts('sandwich')">sandwich</button>
+        <button class="filter-buttons" onclick="filterProducts('pizza')">pizza</button>
+        <button class="filter-buttons" onclick="filterProducts('desserts')">dessert</button>   
+    </div>
+    <br><br>
+    <div class="products-grid">
+    <div class="product pizza">
+        <img src="./margherita pizza.jpeg" alt="error" height="300px" width="300px">
+        <p>Margherita Pizza</p>
+        <p>100 Pounds</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product pizza">
+        <img src="./Pepperoni pizza.jpg" alt="error" height="300px" width="300px">
+        <p>Pepperoni Pizza</p>
+        <p>100 Pounds</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product sandwich">
+        <img src="./burger.jpg" alt="error" height="300px" width="300px">
+        <p>beef burger</p>
+        <p>80 Pounds</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product Beverages">
+        <img src="./orange juice.jpg" alt="error" height="300px" width="300px">
+        <p>orange Juice</p>
+        <p>20 Pounds</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product Beverages">
+        <img src="./lemon.jpeg" alt="error" height="300px" width="300px">
+        <p>lemon Juice</p>
+        <p>20 Pounds</p>
+        <button>Add to Cart</button>
+    </div>
+    <div class="product desserts">
+        <img src="./cinnabon.jpeg" alt="error" height="300px" width="300px">
+        <p>cinnabon</p>
+        <p>30 Pounds</p>
+        <button>Add to Cart</button>
+    </div>
+    
+</div>
+
+<script> 
+function filterProducts(category) {
+    const products = document.getElementsByClassName('product');
+    for (let i = 0; i < products.length; i++) {
+    if (category === 'all' || products[i].classList.contains(category)) {
+        products[i].style.display = 'block';
+    } else {
+        products[i].style.display = 'none';
+    }
+    }
+}
+</Script>
+</section>
+<br><br>
+</main>
+<!-- start footer -->
+<footer>
+            <section><b class="titles" >Tasty Bites</b>  <br><br>
+                <span id="small">Special ingredients. Flaorful taste.<br>Experienced chefs.<br>Delivered to your doorstep.</span>
+            </section>
+            <section> <b class="titles" >Quick Links</b><br><br>
+                <span><a  class="links" href="home.html" title="go to home page" >Home</a><br>
+    <a  class="links" href="products.html" title="go to products page">Products</a><br>
+    <a class="links" href="about.html" title="go to about page">About Us</a><br>
+    <a  class="links" href="contact.html" title="go to contact page">Contact</a>
+                </span>
+            </section>
+<section> <b class="titles" >Contact Us</b> <br> <br>
+<span id="small">123 Flavor Street
+Taste City, <br> TC 12345 <br>
+Phone: (555) 123-4567 <br>
+Email: info@tastybites.com</span>
+<br> <br>
+<div class="social">
+    <a href="https://web.facebook.com/" target="_blank"><i class="fa-brands fa-facebook-f"></i> </a>
+    <a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+    <a href="https://x.com/" target="_blank" ><i class="fa-brands fa-x-twitter" ></i></a>
+</div>
+</section>
+        <section id="rights">
+            <p >© 2025 Tasty Bites. All rights reserved.</p>
+        </section>
+</footer>
+<!-- end footer -->
+</body>
+</html>
