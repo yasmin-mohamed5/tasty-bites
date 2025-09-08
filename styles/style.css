@@ -39,7 +39,6 @@ nav{
 }
 a:hover{
     color: brown;
-    /* لما الماوس يجي على اللينك بيخلي لونه بني */
 }
 .link{
     text-decoration: none;
