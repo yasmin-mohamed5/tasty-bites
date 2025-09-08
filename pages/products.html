@@ -2,7 +2,7 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../styles/style.css">
     <title>Tasty Bites</title>
     <meta name="description" content="tasty food & beverage online shop">
 
@@ -11,10 +11,10 @@
 <!-- start nav -->
     <header>
     <nav ><span > <b>Tasty Bites</b></span>
-    <span> <a class="link" href="home.html" title="go to home page" >Home</a>
-    <a class="active_link" href="products.html" title="go to products page">Products</a>
-    <a class="link" href="about.html" title="go to about page">About</a>
-    <a class="link" href="contact.html" title="go to contact page">Contact</a>
+    <span> <a class="link" href="../index.html" title="go to home page" >Home</a>
+    <a class="active_link" href="./products.html" title="go to products page">Products</a>
+    <a class="link" href="./about.html" title="go to about page">About</a>
+    <a class="link" href="./contact.html" title="go to contact page">Contact</a>
     </span>
     </nav>
     </header>
@@ -38,56 +38,43 @@
     <br><br>
     <div class="products-grid">
     <div class="product pizza">
-        <img src="./margherita pizza.jpeg" alt="error" height="300px" width="300px">
+        <img src="../assets/margherita pizza.jpeg" alt="error" height="300px" width="300px">
         <p>Margherita Pizza</p>
         <p>100 Pounds</p>
         <button>Add to Cart</button>
     </div>
     <div class="product pizza">
-        <img src="./Pepperoni pizza.jpg" alt="error" height="300px" width="300px">
+        <img src="../assets/Pepperoni pizza.jpg" alt="error" height="300px" width="300px">
         <p>Pepperoni Pizza</p>
         <p>100 Pounds</p>
         <button>Add to Cart</button>
     </div>
     <div class="product sandwich">
-        <img src="./burger.jpg" alt="error" height="300px" width="300px">
+        <img src="../assets/beef burger.jpg" alt="error" height="300px" width="300px">
         <p>beef burger</p>
         <p>80 Pounds</p>
         <button>Add to Cart</button>
     </div>
     <div class="product Beverages">
-        <img src="./orange juice.jpg" alt="error" height="300px" width="300px">
+        <img src="../assets/orange juice.jpg" alt="error" height="300px" width="300px">
         <p>orange Juice</p>
         <p>20 Pounds</p>
         <button>Add to Cart</button>
     </div>
     <div class="product Beverages">
-        <img src="./lemon.jpeg" alt="error" height="300px" width="300px">
+        <img src="../assets/lemon.jpeg" alt="error" height="300px" width="300px">
         <p>lemon Juice</p>
         <p>20 Pounds</p>
         <button>Add to Cart</button>
     </div>
     <div class="product desserts">
-        <img src="./cinnabon.jpeg" alt="error" height="300px" width="300px">
+        <img src="../assets/Cinnabon.jpeg" alt="error" height="300px" width="300px">
         <p>cinnabon</p>
         <p>30 Pounds</p>
         <button>Add to Cart</button>
     </div>
     
 </div>
-
-<script> 
-function filterProducts(category) {
-    const products = document.getElementsByClassName('product');
-    for (let i = 0; i < products.length; i++) {
-    if (category === 'all' || products[i].classList.contains(category)) {
-        products[i].style.display = 'block';
-    } else {
-        products[i].style.display = 'none';
-    }
-    }
-}
-</Script>
 </section>
 <br><br>
 </main>
@@ -97,10 +84,10 @@ function filterProducts(category) {
                 <span id="small">Special ingredients. Flaorful taste.<br>Experienced chefs.<br>Delivered to your doorstep.</span>
             </section>
             <section> <b class="titles" >Quick Links</b><br><br>
-                <span><a  class="links" href="home.html" title="go to home page" >Home</a><br>
-    <a  class="links" href="products.html" title="go to products page">Products</a><br>
-    <a class="links" href="about.html" title="go to about page">About Us</a><br>
-    <a  class="links" href="contact.html" title="go to contact page">Contact</a>
+                <span><a  class="links" href="../index.html" title="go to home page" >Home</a><br>
+    <a  class="links" href="./products.html" title="go to products page">Products</a><br>
+    <a class="links" href="./about.html" title="go to about page">About Us</a><br>
+    <a  class="links" href="./contact.html" title="go to contact page">Contact</a>
                 </span>
             </section>
 <section> <b class="titles" >Contact Us</b> <br> <br>
@@ -120,5 +107,6 @@ Email: info@tastybites.com</span>
         </section>
 </footer>
 <!-- end footer -->
+<script src="../scripts/filter.js"></script>
 </body>
 </html>
