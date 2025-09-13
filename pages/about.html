@@ -3,7 +3,6 @@
 <head>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="../styles/style.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
 
     <title>Tasty Bites</title>
     <meta name="description" content="tasty food & beverage online shop">
@@ -12,39 +11,47 @@
 <body>
     <!-- start nav -->
     <header>
-    <nav ><span > <b>Tasty Bites</b></span>
-    <span> <a class="link" href="../index.html" title="go to home page" >Home</a>
-    <a class="link" href="./products.html" title="go to products page">Products</a>
-    <a class="active_link" href="./about.html" title="go to about page">About</a>
-    <a class="link" href="./contact.html" title="go to contact page">Contact</a>
-    </span>
-    </nav>
+        <nav class="navbar">
+            <h1 class="nav-title">Tasty Bites</h1>
+            <p class="nav-links"> 
+                <a class="link" href="../index.html" title="go to home page">Home</a>
+                <a class="link" href="./products.html" title="go to products page">Products</a>
+                <a class="active_link" href="./about.html" title="go to about page">About</a>
+                <a class="link" href="./contact.html" title="go to contact page">Contact</a>
+            </p>
+        </nav>
     </header>
     <!-- end nav -->
 <main>
     <br><br>
-    <section id="page_def" >
+    <section class="page_def"  >
         <p class="head">About Us</p>
-    <p class="detail">Learn more about our passion for quality food and beverage products.</p>
+    <p>Learn more about our passion for quality food and beverage products.</p>
     </section>
-    <br>
-<section style="width: 40%; ">
+    
+<section class="about_container">
+<div>
     <div class="headers">Our Story</div>
-    <div class="detail">Tasty Bites was founded in 2025 with a simple mission: to create Special food and beverage products using high-quality ingredients and traditional techniques.</div>
+    <div class="detail_story">Tasty Bites was founded in 2020 with a simple mission: to create Special food and beverage products using high-quality ingredients and traditional techniques.</div>
     <br>
-    <div class="detail">What began as a small operation in a home kitchen has grown into a beloved brand known for its commitment to quality, sustainability, and incredible flavors.</div>
+    <div class="detail_story">What began as a small operation in a home kitchen has grown into a beloved brand known for its commitment to quality, sustainability, and incredible flavors.</div>
     <br>
-    <div class="detail">Today, we continue to handcraft our products in small batches, ensuring that each item meets our exacting standards before it reaches your table.</div>
+    <div class="detail_story">Today, we continue to handcraft our products in small batches, ensuring that each item meets our exacting standards before it reaches your table.</div>
+</div>
+<div style="padding: 5%;"><img width="350px" src="../assets/Pasta.jpeg" alt="error"></div>
+    
+    <br>
 </section>
-<br><br>
+<br>
 
-<section style="text-align: center; width: 50%;  margin: auto;">
-    <div class="headers">Our Mission</div>
-    <div class="detail">We're here to serve you the best homemade flavors, fast and fresh. Whether you’re craving a cheesy slice, a juicy burger, a cold drink, or a tasty dessert — we've got you covered!</div>
-    </section>
+<section class="our_miision_center">
+    <div class="headers" >Our Mission</div>
+    <div  >We're here to serve you the best homemade flavors, fast and fresh. Whether you’re craving a cheesy slice, a juicy burger, a cold drink, or a tasty dessert — we've got you covered!
+    </div>
     <br> <br>
+    </section>
 <!--           -->
-<div style="text-align: center; display: flex; width: 95%; gap: 5%; margin: auto; ">
+    <div class="container_about">
     <div class="back">
         <i  class="fa-solid fa-circle-check fa-2xl" style="color: brown;"></i>
         <p class="large">Quality Ingredients</p>
@@ -63,13 +70,36 @@
     </div>
 </div>
 <br><br>
-<section style="text-align: center;">
-    <div class="headers">Our Team</div>
+<!-- our team -->
+<section class="team_container">
+    <br>
+    <div class="headers">Our Team</div> <br>
+    <div class="person_container">
+        <div style=" width: 30%;"> 
+            <img class="person" src="../assets/chef pic.jpeg" height="200px" width="200px" alt="error" >
+            <p style="font-size: 25px; font-weight: 900; height: 10px;">Rana Chen</p>
+            <p style="color: brown; font-weight: 800; font-size:20px;">Founder & Head Chef</p>
+            <p >Rana's passion for artisanal food led her to create Tasty Bites after years in the culinary industry.</p>
+        </div>
+        <div  style=" width: 30%;">
+            <img class="person" src="../assets/Operations Director pic.jpeg" height="200px" width="200px" alt="error">
+            <p style="font-size: 25px; font-weight: 900; height: 10px;">Danney Johnson</p>
+            <p style="color: brown; font-weight: 800; font-size:20px;">Operations Director</p>
+            <p>Danney ensures all our products are crafted to perfection and delivered fresh to your doorstep.</p>
+        </div>
+        <div style=" width: 30%;">
+            <img class="person" src="../assets/pic Product Developer.jpeg" height="200px" width="200px" alt="error">
+            <p style="font-size: 25px; font-weight: 900; height: 10px;">Sophia Rodriguez</p>
+            <p style="color: brown; font-weight: 800; font-size:20px;">Product Developer</p>
+            <p>Sophia combines traditional recipes with innovative techniques to create our unique product line.</p>
+        </div>
+    </div>
+    
 </section>
 </main>
 
 <!-- start footer -->
-<footer>
+<footer class="footer_">
             <section><b class="titles" >Tasty Bites</b>  <br><br>
                 <span id="small">Special ingredients. Flaorful taste.<br>Experienced chefs.<br>Delivered to your doorstep.</span>
             </section>
