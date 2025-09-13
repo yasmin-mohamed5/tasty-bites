@@ -127,7 +127,6 @@ button:hover{
 }  
 .home_container{
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 }
 .detail_home{
