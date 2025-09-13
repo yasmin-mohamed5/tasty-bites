@@ -8,7 +8,7 @@ Tasty Bites is a responsive and visually appealing website designed to showcase 
 
 ## 📸 Preview
 
-![Tasty Bites Screenshot](assets/images/preview.png) <!-- Replace with an actual screenshot path if available -->
+![Tasty Bites Screenshot](../tasty-bites/assets/preview.png) <!-- Replace with an actual screenshot path if available -->
 
 ---
 
